@@ -15,7 +15,7 @@ export function LoginPage() {
     setIsLoading(true);
 
     try {
-      const response = await apiRequest<{ success: boolean; data: { token: string; expiresAt: string } }>(
+      const response = await apiRequest<{ token: string; expiresAt: string }>(
         '/auth/admin/login',
         {
           method: 'POST',
@@ -26,7 +26,7 @@ export function LoginPage() {
           }),
         },
       );
-      localStorage.setItem('admin_token', response.data.token);
+      localStorage.setItem('admin_token', response.token);
       navigate('/dashboard');
     } catch (err: any) {
       setError(err.message || '로그인에 실패했습니다.');

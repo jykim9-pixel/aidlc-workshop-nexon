@@ -168,7 +168,16 @@ app.post('/api/tables/:id/complete', (req, res) => {
 app.get('/api/orders/:id', (req, res) => {
   const order = orders.find(o => o.id === req.params.id);
   if (!order) return res.status(404).json({ error: 'Order not found' });
-  res.json(order);
+  // admin-app expects items with menuItem.name and subtotal
+  const formattedOrder = {
+    ...order,
+    items: order.items.map((item: any) => ({
+      ...item,
+      menuItem: { name: item.menuName },
+      subtotal: item.unitPrice * item.quantity,
+    })),
+  };
+  res.json(formattedOrder);
 });
 
 app.patch('/api/orders/:id/status', (req, res) => {

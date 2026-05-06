@@ -27,5 +27,10 @@ export async function apiRequest<T>(
     throw new Error(message);
   }
 
-  return response.json();
+  const json = await response.json();
+  // mock 서버가 { success, data } 형태로 응답하면 data를 추출
+  if (json && typeof json === 'object' && 'success' in json && 'data' in json) {
+    return json.data as T;
+  }
+  return json as T;
 }
