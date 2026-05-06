@@ -1,0 +1,21 @@
+{
+  "name": "table-order",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w packages/backend",
+    "dev:customer": "npm run dev -w packages/customer-app",
+    "dev:admin": "npm run dev -w packages/admin-app",
+    "build": "npm run build -w packages/shared && npm run build -w packages/backend && npm run build -w packages/customer-app && npm run build -w packages/admin-app",
+    "lint": "eslint packages/*/src --ext .ts,.tsx",
+    "db:migrate": "npm run migrate -w packages/backend",
+    "db:seed": "npm run seed -w packages/backend"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  }
+}
