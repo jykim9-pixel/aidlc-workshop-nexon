@@ -40,7 +40,7 @@ export class AuthService {
     const token = jwt.sign(
       { adminId: admin.id, storeId, role: 'admin' },
       JWT_SECRET,
-      { expiresIn: JWT_EXPIRES_IN }
+      { expiresIn: JWT_EXPIRES_IN } as jwt.SignOptions
     );
 
     const expiresAt = new Date(Date.now() + 16 * 60 * 60 * 1000).toISOString();
@@ -73,7 +73,7 @@ export class AuthService {
     const token = jwt.sign(
       { tableId: table.id, storeId, sessionId: activeSession?.id || null, role: 'table' },
       JWT_SECRET,
-      { expiresIn: JWT_EXPIRES_IN }
+      { expiresIn: JWT_EXPIRES_IN } as jwt.SignOptions
     );
 
     const expiresAt = new Date(Date.now() + 16 * 60 * 60 * 1000).toISOString();

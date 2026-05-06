@@ -1,5 +1,3 @@
-import { Order, MenuItem, Category, Table, TableSession } from './entities';
-
 // Auth
 export interface AdminLoginRequest {
   storeId: string;
