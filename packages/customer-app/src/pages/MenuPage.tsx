@@ -65,13 +65,13 @@ export default function MenuPage() {
       </div>
 
       {/* Menu Grid */}
-      <div className="flex-1 p-4 grid grid-cols-2 gap-4 content-start" data-testid="menu-grid">
+      <div className="flex-1 p-4 pb-4 grid grid-cols-3 gap-3 content-start" data-testid="menu-grid">
         {menuItems.map((item) => (
           <div key={item.id} className="bg-white rounded-lg shadow-sm border overflow-hidden" data-testid={`menu-card-${item.id}`}>
             {item.imageUrl ? (
-              <img src={item.imageUrl} alt={item.name} className="w-full h-32 object-cover" />
+              <img src={item.imageUrl} alt={item.name} className="w-full aspect-square object-cover" />
             ) : (
-              <div className="w-full h-32 bg-gray-200 flex items-center justify-center text-4xl">🍽️</div>
+              <div className="w-full aspect-square bg-gray-200 flex items-center justify-center text-4xl">🍽️</div>
             )}
             <div className="p-3">
               <h3 className="font-medium text-sm truncate">{item.name}</h3>
