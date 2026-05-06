@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-05-06T00:00:00Z
-- **Current Stage**: CONSTRUCTION - Code Generation (Unit 1)
+- **Current Stage**: CONSTRUCTION - Code Generation (Unit 1 in progress, Unit 2 complete)
 
 ## Workspace State
 - **Existing Code**: No
@@ -32,11 +32,11 @@
 - [x] Units Generation
 
 ### CONSTRUCTION PHASE
-- [ ] Functional Design
-- [ ] NFR Requirements
-- [ ] NFR Design
-- [ ] Infrastructure Design
-- [ ] Code Generation
+- [x] Functional Design (Unit 2)
+- [ ] NFR Requirements (SKIP)
+- [ ] NFR Design (SKIP)
+- [ ] Infrastructure Design (SKIP)
+- [x] Code Generation (Unit 2)
 - [ ] Build and Test
 
 ### OPERATIONS PHASE

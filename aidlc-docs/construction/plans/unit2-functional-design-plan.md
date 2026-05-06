@@ -17,7 +17,7 @@ B) 자동 재연결 (즉시, 무제한 시도)
 C) 수동 재연결 (사용자가 "다시 연결" 버튼 클릭)
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ### Question 2
 테이블 이용 완료 시 과거 이력 보관 기간을 어떻게 하시겠습니까?
@@ -27,7 +27,7 @@ B) 30일 보관 후 자동 삭제
 C) 90일 보관 후 자동 삭제
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ### Question 3
 관리자 대시보드에서 테이블 카드의 정렬 방식을 어떻게 하시겠습니까?
@@ -37,7 +37,7 @@ B) 최신 주문 순 (활성 테이블이 상단)
 C) 사용자 설정 가능 (번호순/최신순 토글)
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ### Question 4
 신규 주문 강조 표시의 지속 시간을 어떻게 하시겠습니까?
@@ -47,7 +47,7 @@ B) 일정 시간(예: 30초) 후 자동 해제
 C) 주문 상태를 "준비중"으로 변경할 때까지 유지
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ### Question 5
 메뉴 관리에서 카테고리 삭제 시 하위 메뉴 처리를 어떻게 하시겠습니까?
@@ -57,7 +57,7 @@ B) 하위 메뉴도 함께 삭제 (확인 팝업 표시)
 C) 하위 메뉴를 "미분류" 카테고리로 자동 이동
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ---
 
@@ -65,10 +65,10 @@ X) Other (please describe after [Answer]: tag below)
 
 승인 후 아래 순서로 설계를 진행합니다:
 
-- [ ] Step 1: 도메인 엔티티 정의 (SSE, Table Session, Order History)
-- [ ] Step 2: 비즈니스 로직 모델 (SSE 이벤트 관리, 세션 라이프사이클)
-- [ ] Step 3: 비즈니스 규칙 및 유효성 검증
-- [ ] Step 4: 프론트엔드 컴포넌트 설계 (admin-app)
+- [x] Step 1: 도메인 엔티티 정의 (SSE, Table Session, Order History)
+- [x] Step 2: 비즈니스 로직 모델 (SSE 이벤트 관리, 세션 라이프사이클)
+- [x] Step 3: 비즈니스 규칙 및 유효성 검증
+- [x] Step 4: 프론트엔드 컴포넌트 설계 (admin-app)
 
 ---
 

@@ -170,6 +170,7 @@
 
 ---
 
+<<<<<<< HEAD
 ## Functional Design - Unit 1 Complete
 **Timestamp**: 2026-05-06T00:16:00Z
 **User Input**: "unit 1-functional-design 수정완료 (내가 유닛1 맡음)"
@@ -198,5 +199,114 @@
 **User Input**: "approve"
 **AI Response**: Code generation plan approved. Starting Part 2 - Generation.
 **Context**: CONSTRUCTION - Code Generation Unit 1, starting implementation.
+
+---
+
+## Construction - Functional Design (Unit 2) - Session Start
+**Timestamp**: 2026-05-06T00:20:00Z
+**User Input**: "construction\plans에 대해서 unit2를 맡아 진행하려고 합니다."
+**AI Response**: Unit 2 Functional Design Plan 확인. 질문 답변 대기 중.
+**Context**: CONSTRUCTION - Functional Design, Unit 2 (관리 플로우). Plan already created, awaiting user answers to 5 questions.
+
+---
+
+## Construction - Functional Design (Unit 2) - Answers Confirmed
+**Timestamp**: 2026-05-06T00:21:00Z
+**User Input**: "approve" (after receiving recommendations for Q1-Q5)
+**AI Response**: Answers recorded (Q1:A, Q2:A, Q3:A, Q4:C, Q5:A). Generating functional design artifacts.
+**Context**: CONSTRUCTION - Functional Design, Unit 2. All questions answered, proceeding to artifact generation.
+
+### Answers:
+- Q1: A (자동 재연결 3초/10회)
+- Q2: A (무기한 보관)
+- Q3: A (테이블 번호순 고정)
+- Q4: C (준비중 변경까지 유지)
+- Q5: A (하위 메뉴 있으면 삭제 불가)
+
+---
+
+## Construction - Functional Design (Unit 2) - Artifacts Generated
+**Timestamp**: 2026-05-06T00:22:00Z
+**AI Response**: Generated all functional design artifacts for Unit 2.
+**Context**: CONSTRUCTION - Functional Design, Unit 2. All 4 design steps completed.
+
+### Generated Files:
+- domain-entities.md — SSEClient, Table, TableSession, OrderHistory 등 엔티티 정의
+- business-logic-model.md — SSE 관리, 세션 라이프사이클, 이용 완료 로직
+- business-rules.md — 상태 전이, 유효성 검증, 에러 코드
+- frontend-components.md — 컴포넌트 계층, Store, Hooks, API 통합
+
+---
+
+## Construction - Functional Design (Unit 2) - Approval
+**Timestamp**: 2026-05-06T00:23:00Z
+**User Input**: "approve"
+**AI Response**: Functional Design approved. Proceeding to Code Generation stage.
+**Context**: CONSTRUCTION - Functional Design, Unit 2 complete. Moving to Code Generation.
+
+---
+
+## Construction - Code Generation (Unit 2) - Plan Created
+**Timestamp**: 2026-05-06T00:24:00Z
+**AI Response**: Created unit2-code-generation-plan.md with 26 steps covering backend (SSE, Table, History), API layer, frontend (admin-app), and tests.
+**Context**: CONSTRUCTION - Code Generation Part 1 (Planning), Unit 2.
+
+---
+
+## Construction - Code Generation (Unit 2) - Approval Prompt
+**Timestamp**: 2026-05-06T00:24:01Z
+**AI Response**: Presenting code generation plan for user approval.
+**Context**: CONSTRUCTION - Code Generation Part 1, awaiting user approval.
+
+---
+
+## Construction - Code Generation (Unit 2) - Plan Approval
+**Timestamp**: 2026-05-06T00:25:00Z
+**User Input**: "approve"
+**AI Response**: Code generation plan approved. Starting Part 2 - Generation.
+**Context**: CONSTRUCTION - Code Generation Part 1 approved, proceeding to Part 2.
+
+---
+
+## Construction - Code Generation (Unit 2) - Generation Complete
+**Timestamp**: 2026-05-06T00:30:00Z
+**AI Response**: All 26 steps completed. Generated backend (SSE, Table, Order services + controllers + tests), shared types, Prisma schema, and frontend (admin-app: 3 pages, stores, hooks, API clients, components, tests, routing).
+**Context**: CONSTRUCTION - Code Generation Part 2 complete for Unit 2.
+
+### Generated Files Summary:
+**Backend:**
+- packages/backend/prisma/schema.prisma
+- packages/backend/src/modules/sse/sse.service.ts
+- packages/backend/src/modules/sse/sse.controller.ts
+- packages/backend/src/modules/sse/sse.service.test.ts
+- packages/backend/src/modules/sse/sse.controller.test.ts
+- packages/backend/src/modules/table/table.service.ts
+- packages/backend/src/modules/table/table.controller.ts
+- packages/backend/src/modules/table/table.service.test.ts
+- packages/backend/src/modules/table/table.controller.test.ts
+- packages/backend/src/modules/order/order.service.ts
+- packages/backend/src/modules/menu/category.controller.ts
+
+**Shared:**
+- packages/shared/src/types/table.ts
+- packages/shared/src/types/sse.ts
+- packages/shared/src/types/history.ts
+- packages/shared/src/types/index.ts
+
+**Frontend (admin-app):**
+- packages/admin-app/src/App.tsx
+- packages/admin-app/src/api/client.ts, tableApi.ts, menuApi.ts, historyApi.ts
+- packages/admin-app/src/stores/dashboardStore.ts, menuStore.ts, historyStore.ts
+- packages/admin-app/src/hooks/useSSE.ts, useTables.ts
+- packages/admin-app/src/pages/LoginPage.tsx, DashboardPage.tsx, MenuManagementPage.tsx, OrderHistoryPage.tsx
+- packages/admin-app/src/components/Layout.tsx, ConnectionStatus.tsx, TableGrid.tsx, TableCard.tsx, OrderDetailModal.tsx, CompleteConfirmModal.tsx, CategorySidebar.tsx, MenuList.tsx, MenuFormModal.tsx, HistoryFilter.tsx, HistoryList.tsx, HistoryDetailModal.tsx
+- packages/admin-app/src/stores/dashboardStore.test.ts
+- packages/admin-app/src/components/TableCard.test.tsx
+
+**Documentation:**
+- aidlc-docs/construction/unit2-admin-flow/code/business-logic-summary.md
+- aidlc-docs/construction/unit2-admin-flow/code/api-layer-summary.md
+- aidlc-docs/construction/unit2-admin-flow/code/frontend-summary.md
+>>>>>>> e7ea12c (feat(unit2): add functional design, code generation plan, and design artifacts)
 
 ---
